@@ -1,0 +1,31 @@
+.todo-container {
+  margin: 0 auto;
+  /* margin-top: 0.5rem; */
+  width: 60%;
+  background-color: #eceff1;
+  border: 1px solid #babdbe;
+  padding-bottom: 1rem;
+}
+
+.todo-container > h1 {
+  color: #282c34;
+}
+
+.todo-container > form > input {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.todo-container > form > button {
+  background-color: #4caf50;
+  color: #fafafa;
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.todo-container > form > button:hover {
+  background-color: #087f23;
+  cursor: pointer;
+}
