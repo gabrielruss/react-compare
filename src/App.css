@@ -2,8 +2,13 @@
   text-align: center;
 }
 
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 5vmin;
+}
+
 .App-header {
-  background-color: #282c34;
+  background-color: #00363a;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
@@ -11,6 +16,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.App-header > img {
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .App-link {

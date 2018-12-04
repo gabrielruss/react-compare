@@ -12,6 +12,7 @@ class Todo extends React.Component<{}, ITodoState> {
 
   handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
+    if (!this.state.value.trim()) return;
     this.setState((state: ITodoState) => ({
       value: "",
       todoItems: [state.value, ...state.todoItems]
@@ -27,7 +28,6 @@ class Todo extends React.Component<{}, ITodoState> {
     return (
       <React.Fragment>
         <div className="todo-container">
-          <h1>Todo</h1>
           <form onSubmit={this.handleSubmit}>
             <input
               type="text"
@@ -35,10 +35,10 @@ class Todo extends React.Component<{}, ITodoState> {
               onChange={this.handleChange}
               value={value}
             />
-            <input type="submit" value="Add Todo" />
+            <input type="submit" value="+" />
           </form>
+          <TodoList todoItems={todoItems} />
         </div>
-        <TodoList todoItems={todoItems} />
       </React.Fragment>
     );
   }
