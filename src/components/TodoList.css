@@ -1,6 +1,7 @@
 .todo-list {
   width: 40%;
   margin: 0 auto;
+  grid-column-start: 2;
 }
 
 .todo-list > ul {

@@ -28,7 +28,7 @@ class Todo extends React.Component<{}, ITodoState> {
     return (
       <React.Fragment>
         <div className="todo-container">
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} className="todo-form">
             <input
               type="text"
               name="todoInput"
