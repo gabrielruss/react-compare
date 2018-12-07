@@ -29,13 +29,16 @@ class Todo extends React.Component<{}, ITodoState> {
       <React.Fragment>
         <div className="todo-container">
           <form onSubmit={this.handleSubmit} className="todo-form">
-            <input
-              type="text"
-              name="todoInput"
-              onChange={this.handleChange}
-              value={value}
-            />
-            <input type="submit" value="+" />
+            <div className="styled-input-wrapper">
+              <input
+                type="text"
+                name="todoInput"
+                className="styled-input"
+                onChange={this.handleChange}
+                value={value}
+              />
+              <button type="submit">+</button>
+            </div>
           </form>
           <TodoList todoItems={todoItems} />
         </div>
